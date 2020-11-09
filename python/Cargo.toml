@@ -1,0 +1,16 @@
+[package]
+name = "tok-python"
+version = "0.1.0"
+authors = ["Alexandru Macovei <alexnmaco@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ordered-float = "2.0.0"
+rustpython-parser = "0.1.2"
+serde = "1.0.117"
+serde_json = "1.0.59"
+
+[profile.release]
+lto = "fat"
